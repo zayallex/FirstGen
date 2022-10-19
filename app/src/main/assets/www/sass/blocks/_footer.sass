@@ -1,0 +1,54 @@
+.footer
+  background-color: #191919
+  height: 55px
+  width: 100% 
+  box-shadow: 0 21px 21px rgba(0, 0, 0, 0.28)
+  opacity: 0.9
+  color: #ffffff
+  height: 146px
+  &-adress
+    display: flex
+    justify-content: flex-start
+    align-items: center
+    &__text
+      font-size: 13px
+      +reg
+  &-block
+    display: flex
+    justify-content: space-between
+    align-items: center
+    height: 146px
+    //width: 100%
+  &-feedback
+    text-align: right
+    &__phone
+      font-size: 17px
+      //line-height: 30px
+      color: #ffffff
+      +bold
+    &__href
+      font-size: 14px
+      line-height: 18px
+      color: $button-color
+      line-height: 30px
+      +med
+  &__img
+    margin-right: 20px
+    margin-top: 4px
+@media (max-width: 567px)
+  .footer
+    height: 100%  
+    &-block
+      flex-direction: column
+      height: 100%
+    &-adress
+      &__text
+        font-size: 11px
+    &-feedback
+      //width: 100%
+      text-align: left
+      margin-top: 20px
+      &__phone
+        font-size: 14px
+      &__href
+        font-size: 12px

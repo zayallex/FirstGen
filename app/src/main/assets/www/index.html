@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <!--<link rel="stylesheet" href="js/jquery-3.3.1.min.js">
+    <link rel="stylesheet" href="js/jquery.maskedinput.min.js">
+    <link rel="stylesheet" href="js/jquery.validate.min.js">
+    <link rel="stylesheet" href="js/request_map.js">
+    <link rel="stylesheet" href="js/slick.min.js">
+    <link rel="stylesheet" href="js/wow.min.js"-->
+    <script src="https://yandex.st/jquery/2.2.3/jquery.min.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=27042d23-c454-4468-ba30-619c4a66bc8c;scroll=false"></script>
+</head>
+<body>
+
+<nav class="navbar" id="top">
+    <div class="container">
+        <div class="navbar-block">
+            <div class="navbar-text" id="menu">
+                <div class="navbar-menu">Главное меню</div>
+                <a href="#" class="navbar-text-block">Главная</a>
+                <!-- /.navbar-text-block -->
+
+                <a href="#hero" class="navbar-text-block">Виды макетов</a>
+                <!-- /.navbar-text-block -->
+
+                <a href="#" class="navbar-text-block">Комплектация макетов</a>
+                <!-- /.navbar-text-block -->
+
+                <a href="#recomend" class="navbar-text-block">Реализованные проекты</a>
+                <!-- /.navbar-text-block -->
+
+                <a href="#clients" class="navbar-text-block">Наши клиенты</a>
+                <!-- /.navbar-text-block -->
+
+                <a href="#" class="navbar-text-block">Контакты</a>
+                <!-- /.navbar-text-block -->
+            </div>
+            <!-- /.navbar-text -->
+            <div class="navbar-feedback">
+                <div class="navbar-feedback__phone">8 800 891-33-33</div>
+                <a class="navbar-feedback__href" href="#">Заказать обратный звонок</a>
+            </div>
+            <!-- /.navbar-feedback -->
+        </div>
+        <!-- /.navbar-block -->
+    </div>
+    <!-- /.container -->
+</nav>
+<!-- /.navbar -->
+
+<main>
+
+    <section class="preview">
+        <div class="container">
+            <div class="preview-block">
+                <div class="preview-text">
+                    <div class="preview__title">Изготовление макетов любой сложности</div>
+                    <div class="preview__subtitle">Продажи. Инвестиции. Имидж.</div>
+                    <ul class="preview-pluses">
+                        <li class="preview-plus">
+                            <div class="preview-plus__image">
+                                <img src="img/preview/5.png" alt="">
+                            </div>
+                            <span class="preview-plus__text">Срок производства<br> от 5 дней</span>
+                        </li>
+                        <li class="preview-plus">
+                            <div class="preview-plus__image">
+                                <img src="img/preview/24.png" alt="">
+                            </div>
+                            <span class="preview-plus__text">Гарантия на макеты<br> 24 месяца</span>
+                        </li>
+                        <li class="preview-plus">
+                            <div class="preview-plus__image">
+                                <img src="img/preview/reload.png" alt="">
+                            </div>
+                            <span class="preview-plus__text">Проектируем, изготавливаем,<br> доставляем и устанавливаем</span>
+                        </li>
+                        <li class="preview-plus">
+                            <div class="preview-plus__image">
+                                <img src="img/preview/map-location.png" alt="">
+                            </div>
+                            <span class="preview-plus__text">Застрахуем, доставим<br> и установим</span>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.preview-text -->
+                <form class="preview-form" id="preview-form">
+                    <div class="preview-form-text"><p class="preview-form__title">Оставьте заявку и получите<br> расчет стоимость макета<br> в течение</p><p class="preview-form__title-bold"> 30 минут</p></div>
+                    <div class="preview-form-item">
+                        <input type="text" name="username" class="input preview__input" placeholder="Ваше имя">
+                    </div>
+                    <div class="preview-form-item">
+                        <input type="text" name="phone" id="phone" class="input phone preview__input" placeholder="Контактный телефон">
+                    </div>
+                    <div class="preview-form-item">
+                        <input type="text" name="email" class="input preview__input" placeholder="Электронная почта">
+                    </div>
+                    <button class="preview__button button">Оставить заявку</button>
+                </form>
+                <!-- /.preview__image -->
+            </div>
+            <!-- /.preview-block -->
+        </div>
+        <!-- /.container -->
+    </section>
+    <!-- /.preview -->
+
+    <section class="hero" id="hero">
+        <div class="container">
+            <div class="hero-block">
+                <div class="hero-text-block">
+                    <div class="hero-text__title">Виды макетов</div>
+                    <!-- /.hero-text-tytle -->
+                    <div class="hero-text__line"></div>
+                    <!-- /.hero-text__line -->
+                    <div class="hero-text__subtitle">Создаем макеты от небольших домов до космических станций</div>
+                    <!-- /.hero-text-subtytle -->
+                </div>
+                <!-- /.hero-text-block -->
+
+
+                <div class="hero-cards">
+                    <div class="hero-card">
+                        <div class="hero-card__title">Архитектурные макеты</div>
+                        <div class="hero__image">
+                            <img src="img/hero/hero-image-1.jpg" alt="#">
+                        </div>
+                        <div class="hero-card-description">
+                            <div class="hero-card__text">Многоэтажные дома</div>
+                            <div class="hero-card__line"></div>
+                            <div class="hero-card__text">Виды макетов</div>
+                            <div class="hero-card__line"></div>
+                            <div class="hero-card__text">Коттеджные поселки</div>
+                            <div class="hero-card__line"></div>
+                            <div class="hero-card__text">Торговые комплексы</div>
+                            <div class="hero-card__line"></div>
+                            <div class="hero-card__text">Бизнес – парки</div>
+                            <div class="hero-card__line"></div>
+                            <div class="hero-card__text">Административные здания</div>
+                            <div class="hero-card__line"></div>
+                            <div class="hero-card__text">Гостиницы и санатории</div>
+                        </div>
+                        <div class="hero-card-button">
+                            <button class="hero-card__button button">Рассчитать стоимость</button>
+                        </div>
+                    </div>
+
+                    <div class="hero-card">
+                        <div class="hero-card__title">Градостроительные макеты</div>
+                        <img src="img/hero/hero-image-2.jpg" alt="#" class="hero__image">
+                        <div class="hero-card-description">
+                            <div class="hero-card__text">Области</div>
+                            <div class="hero-card__line"></div>
+                            <div class="hero-card__text">Города</div>
+                            <div class="hero-card__line"></div>
+                            <div class="hero-card__text">Районы</div>
+                            <div class="hero-card__line"></div>
+                            <div class="hero-card__text">Микрорайоны</div>
+                            <div class="hero-card__line"></div>
+                            <div class="hero-card__text">Территории</div>
+                            <div class="hero-card__line"></div>
+                            <div class="hero-card__text">Мосты и тоннели</div>
+                        </div>
+                        <div class="hero-card-button">
+                            <button class="hero-card__button button">Рассчитать стоимость</button>
+                        </div>
+                    </div>
+
+                    <div class="hero-card">
+                        <div class="hero-card__title">Промышленные макеты</div>
+                        <img src="img/hero/hero-image-3.jpg" alt="#" class="hero__image">
+                        <div class="hero-card-description">
+                            <div class="hero-card__text">Предприятия и фабрики</div>
+                            <div class="hero-card__line"></div>
+                            <div class="hero-card__text">Энергетические объекты</div>
+                            <div class="hero-card__line"></div>
+                            <div class="hero-card__text">Заводы</div>
+                            <div class="hero-card__line"></div>
+                            <div class="hero-card__text">Научные центры</div>
+                            <div class="hero-card__line"></div>
+                            <div class="hero-card__text">Трубопроводы</div>
+                            <div class="hero-card__line"></div>
+                            <div class="hero-card__text">Производственные линии</div>
+                            <div class="hero-card__line"></div>
+                            <div class="hero-card__text">Технологические линии</div>
+                        </div>
+                        <div class="hero-card-button">
+                            <button class="hero-card__button button">Рассчитать стоимость</button>
+                        </div>
+                    </div>
+
+                    <div class="hero-card">
+                        <div class="hero-card__title">Интерьерные макеты</div>
+                        <img src="img/hero/hero-image-4.jpg" alt="#" class="hero__image">
+                        <div class="hero-card-description">
+                            <div class="hero-card__text">Квартиры</div>
+                            <div class="hero-card__line"></div>
+                            <div class="hero-card__text">Офисы</div>
+                            <div class="hero-card__line"></div>
+                            <div class="hero-card__text">Коттеджи</div>
+                            <div class="hero-card__line"></div>
+                            <div class="hero-card__text">Магазины</div>
+                            <div class="hero-card__line"></div>
+                            <div class="hero-card__text">Спортивные комплексы</div>
+                            <div class="hero-card__line"></div>
+                            <div class="hero-card__text">Торговые центры</div>
+                            <div class="hero-card__line"></div>
+                            <div class="hero-card__text">Заводы</div>
+                        </div>
+                        <div class="hero-card-button">
+                            <button class="hero-card__button button">Рассчитать стоимость</button>
+                        </div>
+                    </div>
+
+                    <div class="hero-card">
+                        <div class="hero-card__title">Ландшафтные макеты</div>
+                        <img src="img/hero/hero-image-5.jpg" alt="#" class="hero__image">
+                        <div class="hero-card-description">
+                            <div class="hero-card__text">Парки</div>
+                            <div class="hero-card__line"></div>
+                            <div class="hero-card__text">Сады</div>
+                            <div class="hero-card__line"></div>
+                            <div class="hero-card__text">Горы</div>
+                            <div class="hero-card__line"></div>
+                            <div class="hero-card__text">Озера</div>
+                            <div class="hero-card__line"></div>
+                            <div class="hero-card__text">Рельефы местности</div>
+                            <div class="hero-card__line"></div>
+                            <div class="hero-card__text">Участки</div>
+                        </div>
+                        <div class="hero-card-button">
+                            <button class="hero-card__button button">Рассчитать стоимость</button>
+                        </div>
+                    </div>
+
+                    <div class="hero-card">
+                        <div class="hero-card__title">Индивидуальные макеты</div>
+                        <img src="img/hero/hero-image-6.jpg" alt="#" class="hero__image">
+                        <div class="hero-card-description">
+                            <div class="hero-card__text-solo">Мы может воплотить в жизнь любые идеи, с применением высоких технологий, максимальной детализацией и совершенно любых размеров</div>
+                        </div>
+                        <div class="hero-card-button">
+                            <button class="hero-card__button button">Рассчитать стоимость</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.hero-cards -->
+
+            </div>
+            <!-- /.hero-block -->
+        </div>
+        <!-- /.contain -->
+    </section>
+    <!-- /.hero -->
+
+    <section class="function">
+        <div class="container">
+            <div class="function-block">
+                <div class="function__text">Все макеты, изготовленные нашей макетной мастерской, помогли клиентам выполнить поставленные цели, а именно:</div>
+                <!-- /.function__text -->
+                <div class="functions">
+                    <div class="function-card">
+                        <div class="function-card__image">
+                            <img src="img/function/function-1.png" alt="">
+                        </div>
+                        <!-- /.function-card__image -->
+                        <div class="function-card__description">Продать квартиру, дом, участок, объект.</div>
+                        <!-- /.function-card__description -->
+                    </div>
+                    <div class="function-card">
+                        <div class="function-card__image">
+                            <img src="img/function/function-2.png" alt="">
+                        </div>
+                        <!-- /.function-card__image -->
+                        <div class="function-card__description">Привлечь инвестиции<br> в проект.</div>
+                        <!-- /.function-card__description -->
+                    </div>
+                    <div class="function-card">
+                        <div class="function-card__image-spec">
+                            <img src="img/function/function-3.png" alt="">
+                        </div>
+                        <!-- /.function-card__image -->
+                        <div class="function-card__description-spec">Наглядно представить объект посетителю с целью ознакомления с территорией, зданием.</div>
+                        <!-- /.function-card__description -->
+                    </div>
+                    <div class="function-card">
+                        <div class="function-card__image">
+                            <img src="img/function/function-4.png" alt="">
+                        </div>
+                        <!-- /.function-card__image -->
+                        <div class="function-card__description">Представить проект первым лицам государства, компании.</div>
+                        <!-- /.function-card__description -->
+                    </div>
+                    <div class="function-card">
+                        <div class="function-card__image">
+                            <img src="img/function/function-5.png" alt="">
+                        </div>
+                        <!-- /.function-card__image -->
+                        <div class="function-card__description">Обучение сотрудников, военнослужащих, студентов и т.д.</div>
+                        <!-- /.function-card__description -->
+                    </div>
+                    <div class="function-card">
+                        <div class="function-card__image">
+                            <img src="img/function/function-6.png" alt="">
+                        </div>
+                        <!-- /.function-card__image -->
+                        <div class="function-card__description">Получить разрешение<br> на строительство.</div>
+                        <!-- /.function-card__description -->
+                    </div>
+                    <div class="function-card">
+                        <div class="function-card__image">
+                            <img src="img/function/function-7.png" alt="">
+                        </div>
+                        <!-- /.function-card__image -->
+                        <div class="function-card__description">Бизнес подарок.</div>
+                        <!-- /.function-card__description -->
+                    </div>
+                    <div class="function-card">
+                        <div class="function-card__image">
+                            <img src="img/function/function-8.png" alt="">
+                        </div>
+                        <!-- /.function-card__image -->
+                        <div class="function-card__description">Дополнить интерьер.</div>
+                        <!-- /.function-card__description -->
+                    </div>
+                </div>
+                <!-- /.functions -->
+            </div>
+            <!-- /.function-block -->
+        </div>
+    </section>
+    <!-- /.function container -->
+
+    <div class="map" id="map"></div>
+</main>
+
+<footer class="footer">
+    <div class="container footer-block">
+        <div class="footer-adress">
+            <div class="footer__img">
+                <img src="img/footer-img.png" alt="">
+            </div>
+            <p class="footer-adress__text">
+                г. Москва, <br>Автомоторная улица, 4А, стр.21
+            </p>
+        </div>
+        <div class="footer-feedback">
+            <div class="footer-feedback__phone">8 800 891-33-33</div>
+            <a class="footer-feedback__href" href="#">Заказать обратный звонок</a>
+        </div>
+    </div>
+</footer>
+
+<a href="#top" id="arrow_up" class="riser">
+    <img src="img/arrow-up.png" alt="">
+</a>
+
+<script src="js/jquery-3.3.1.min.js"></script>
+
+<script src="js/request_map.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/scroll.js"></script>
+
+<!--<script src="js/validate.js"></script>-->
+<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/jquery.maskedinput.min.js"></script>
+<script src="js/jquery.validate.min.js"></script>
+<script>
+    new WOW().init();
+    $(document).ready(function(){
+      $('.recomend-slider').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        prevArrow: $('.recomend-arrows__left'),
+        nextArrow: $('.recomend-arrows__right'),
+      });
+      $('.clients-slick').slick({
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        prevArrow: $('.clients-arrows__left'),
+        nextArrow: $('.clients-arrows__right'),
+        responsive: [
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        },
+          {
+          breakpoint: 1200,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 1
+            }
+          }
+        ]
+      });
+    });
+    $(document).ready(function() {
+      $('#preview-form').validate({
+        rules: {
+          username: {
+            required: true,
+            minlength: 2
+          },
+          email: {
+            required: true,
+            email: true
+          },
+          phone: {
+            required: true
+          }
+        },
+        messages: {
+          username: {
+            required: "Заполните поле",
+            minlength: jQuery.validator.format("Еще символов {0}")
+          },
+          email: "Укажите корректный email",
+          phone: "Заполните поле"
+        }
+      });
+      // Маска телефона
+      $('.phone').mask('+7 (999) 999-99-99');
+    });
+
+  </script>
+</body>
+</html>

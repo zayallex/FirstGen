@@ -1,0 +1,164 @@
+.recomend
+  //height: 100%
+  background-color: #e8e8e8
+  &-block
+    height: 753px
+  &__title
+    text-align: center
+    padding-top: 96px
+    font-size: 36px
+    +med
+    margin-bottom: 24px
+  &__line
+    margin: auto
+    width: 31px
+    height: 2px
+    background-color: #23bac1
+    margin-bottom: 36px
+  &__subtitle
+    font-size: 20px
+    +reg
+    text-align: center
+    margin-bottom: 100px
+  &-slider
+    &__item
+      display: flex
+      justify-content: center
+      flex-direction: row
+      outline: none
+      padding-bottom: 15px
+  &__img
+    margin-right: 87px
+    display: inline-block
+  &-text
+    display: inline-flex
+    flex-direction: column
+    top: 0
+    &__title
+      font-size: 24px
+      +med
+      margin-bottom: 43px
+    &-description
+      &__description
+        font-size: 12px
+        +reg
+        line-height: 20px
+        margin-bottom: 7px
+        color: #7f7f7f
+      &__text
+        font-size: 16px
+        +reg
+        line-height: 20px
+        margin-bottom: 50px
+  &-values
+    display: flex
+    justify-content: space-between
+    width: 100%
+    margin-bottom: 64px
+    &-scale
+      display: inline-block
+      flex-basis: 100%/3
+    &__scale
+      display: inline-block
+      font-size: 12px
+      +reg
+      line-height: 20px
+      margin-bottom: 13px
+    &-amount
+      display: inline-block
+      font-size: 16px
+      +reg
+      line-height: 20px
+  &__button
+    width: 216px
+    height: 60px
+    background-color: $button-color
+    border: none
+    font-size: 13px
+    +sbold
+    text-transform: uppercase
+    // Text style for ", Заказать"
+    letter-spacing: 0.33px
+    color: white
+  &-slide
+    //display: relative
+.recomend-arrows
+  position: relative
+  width: 100%
+  display: flex
+  justify-content: space-between
+  top: -185px
+  &__left, &__right
+    &:hover
+      cursor: pointer
+      //position: absolute
+  &__left
+    //position: relative
+    //left: 250px
+    //top: 150px
+    right: 120px
+  &__right
+    //position: relative
+    //top: 150px
+    left: 120px
+/*@media (max-width: 1200px)
+  .recomend-arrows
+    top: -230px
+    &__left, &__right
+      position: relative
+    &__left
+      right: 40px
+    &__right
+      left: 40px*/
+
+@media (max-width: 1200px)
+  .recomend
+    height: 2%
+    &-block
+      height: 100%
+    &-text
+      width: 70%
+      margin: auto
+    &__img
+      //width: 100%
+      margin-right: 0
+      margin: auto
+      margin-bottom: 50px
+    &__image
+      width: 100%
+      margin: auto
+    &__button
+      margin: auto
+    &-slider
+      &__item
+        flex-direction: column
+        //background: rgba(0, 0, 0, 0.1)
+        //margin: auto
+  .recomend-arrows
+    height: 100px
+    top: -800px
+    &__left, &__right
+      //padding-top: 400px
+      //padding-bottom: 400px
+      //position: relative
+      padding: 420px 10px
+      background-color: $button-color
+      opacity: 0.7
+@media (max-width: 567px)
+  .recomend-arrows
+    height: 26px
+    //width: 20%
+    margin: auto
+    top: 0px
+    display: flex
+    margin-bottom: 30px
+    &__left, &__right
+      //padding-top: 400px
+      //padding-bottom: 400px
+      position: static
+      padding: 0px 30px
+      opacity: 0.7
+    &__left
+      right: 0px
+    &__right
+      left: 0px

@@ -1,0 +1,98 @@
+.navbar
+  background-color: #ffffff
+  height: 55px
+  width: 100% 
+  box-shadow: 0 21px 21px rgba(0, 0, 0, 0.28)
+  opacity: 0.9
+  &-block
+    display: flex
+    justify-content: space-between
+    align-items: center
+    height: 55px
+    width: 100%
+  &-menu
+    display: none
+  &-text
+    display: flex
+    justify-content: space-between
+    flex-basis: 70.5%
+    &-block
+      text-decoration: none
+      flex-basis: 100%/6
+      background-color: #ffffff
+      margin-right: 33px 
+      font-size: 14px
+      line-height: 18px
+      color: #000000
+      border-bottom: 1px solid #afafaf
+      background-color: #ffffff
+      +med
+  &-feedback
+    text-align: right
+    &__phone
+      font-size: 17px
+      line-height: 20px
+      color: $text-color
+      +bold
+    &__href
+      font-size: 14px
+      line-height: 18px
+      color: $button-color
+      +med
+
+@media (max-width: 1200px)
+  .navbar
+    transition: 0.3s
+    &-text
+      &-block
+        display: none
+        margin-right: 0
+    &-menu
+      display: block
+    &-feedback
+      width: 350px
+    &:hover
+      .navbar
+        &-menu
+          display: none
+        &-block
+          //height: 500px
+          position: relative
+          transition: 0.3s
+          flex-basis: 100%
+        &-text
+          transition: 0.3s
+          top: 18px
+          display: flex
+          height: 100px
+          flex-direction: column
+          position: absolute
+          width: 40%
+          margin-right: 0
+          &-block
+            display: block
+            border-left: 5px solid $button-color
+            border-right: 5px solid $button-color
+            width: 100%
+            margin-right: 0
+            //border: none
+        &-feedback
+          top: 8px
+          right: 0
+          position: absolute
+@media (max-width: 567px)
+  .navbar
+    &-menu
+      margin-left: 5px
+    &-text
+      &-block
+        //font-size: 11px
+        //width: 100%
+    &-feedback
+      &__phone
+        font-size: 14px
+        line-height: 16px
+      &__href
+        font-size: 11px
+    &-feedback
+      margin-right: 7px
